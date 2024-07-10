@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.simplewakelock">
+    package="nc.autoscreenoff">
 
     <!-- this lines allow to use the WakeLock we need -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Auto Screen Off"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:excludeFromRecents="true"
         android:theme="@style/Theme.SimpleWakeLock">
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
